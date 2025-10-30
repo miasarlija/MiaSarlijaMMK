@@ -9,6 +9,8 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
+    text-align: center;
+
 }
 
 
@@ -16,10 +18,11 @@ body {
     color: #3f51b5;
     text-align: center;
     margin-bottom: 10px;
+    display: block;
 }
 
 
-h2, h3 {
+h2, h3, h4 {
     color: #303f9f;
     border-bottom: 2px solid #c5cae9;
     padding-bottom: 4px;
@@ -31,6 +34,8 @@ p {
     max-width: 700px;
     margin: 10px auto;
     font-size: 1rem;
+    text-align: justify;
+
 }
 
 
@@ -40,7 +45,18 @@ ol {
     border-radius: 10px;
     max-width: 500px;
     margin: 15px auto;
+    text-align: left;
+    list-style: square;
 }
+
+ul {
+    list-style: square; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    list-style: decimal;
+    }
 
 li {
     margin: 6px 0;
@@ -52,3 +68,6 @@ h3 {
     text-align: center;
 }
 
+span {
+    float: right;
+}
