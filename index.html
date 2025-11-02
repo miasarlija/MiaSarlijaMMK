@@ -31,7 +31,35 @@
            <li><a href="https://youtu.be/KCxjDPrUs04?si=0EUpZkTMii2P9gYJ">Bitanga i princeza - Bijelo dugme</a></li>
            <li><a href="https://youtu.be/YAMClna5m8k?si=fhPePABQsxiUBg-7">Buđav lebac - S.A.R.S.</a></li>
     </ul>
-    
+
+  
+
+<form action="#">
+  <fieldset>
+    <legend>Tvoje informacije</legend>
+
+    <label for="ime">Ime:</label>
+    <input type="text" id="ime" name="ime" placeholder="Upiši svoje ime"><br><br>
+
+    <label for="zanr">Omiljeni žanr:</label>
+    <select id="zanr" name="zanr">
+      <option value="rock">Rock</option>
+      <option value="pop">Pop</option>
+      <option value="jazz">Jazz</option>
+      <option value="rap">Rap</option>
+    </select><br><br>
+
+    <label for="izvodac">Najdraži ponuđeni izvođač:</label>
+    <input list="izvodaci" id="izvodac" name="izvodac" placeholder="Npr. Arctic Monkeys">
+    <datalist id="izvodaci">
+      <option value="Arctic Monkeys">
+      <option value="S.A.R.S.">
+      <option value="Cigarettes After Sex">
+      <option value="Dječaci">
+    </datalist><br><br>
+<button type="submit"> Ja sam gumb</button>
+  </fieldset>
+</form>  
 
 </body>
 </html>
