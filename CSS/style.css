@@ -127,3 +127,39 @@ button {
     background-color: #c5cae9;
     cursor: pointer;
 }
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table.sadrzaj {
+    background-color: #e8eaf6;
+    border-radius: 10px;
+}
+
+table.sadrzaj th {
+    background-color: #c5cae9;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+table.sadrzaj td {
+    padding: 10px;
+    border: 1px solid #d7c8d5;
+    height: 40px;
+}
+
+table.sadrzaj tbody tr:nth-child(even) {
+    background-color: #f0f0ff;
+}
+
+table.sadrzaj td:nth-child(1) {
+    font-weight: bold;
+    text-align: center;
+}
+
+table.sadrzaj tr:nth-child(1) td {
+    padding: 14px;
+}
