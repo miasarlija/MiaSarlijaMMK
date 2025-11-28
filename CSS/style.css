@@ -61,6 +61,8 @@ ul {
 li {
     margin: 6px 0;
     font-weight: 500;
+    vertical-align: middle;
+
 }
 
 h3 {
@@ -79,6 +81,7 @@ form {
     background-color: #f0f0ff;
     border: 1px solid #ccc;
     border-radius: 8px;
+    position: relative;
 }
 
 
@@ -88,8 +91,9 @@ fieldset {
 }
 
 legend {
-    font-weight: bold;
-    color: #3f51b5;
+    position: relative;
+    top: -5px;
+    left: 5px;
 }
 
 input[type="text"],
@@ -126,6 +130,7 @@ button {
     border-radius: 4px;
     background-color: #c5cae9;
     cursor: pointer;
+    display: inline-block;
 }
 
 table {
@@ -162,4 +167,10 @@ table.sadrzaj td:nth-child(1) {
 
 table.sadrzaj tr:nth-child(1) td {
     padding: 14px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
