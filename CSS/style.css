@@ -19,6 +19,7 @@ body {
     text-align: center;
     margin-bottom: 10px;
     display: block;
+    animation: fadeInDown 1s ease-out;
 }
 
 
@@ -164,6 +165,10 @@ table.sadrzaj tbody tr:nth-child(even) {
     background-color: #f0f0ff;
 }
 
+table.sadrzaj tbody tr:nth-child(odd) {
+    animation: fadeRow 0.6s ease-in;
+}
+
 table.sadrzaj td:nth-child(1) {
     font-weight: bold;
     text-align: center;
@@ -195,14 +200,17 @@ img {
     float: none;
     vertical-align: middle;
 
-    transition: transform 0.3 ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
+} 
 
+img:nth-of-type(2) {
+    transform: rotate(-1deg);
+}
 
 object {
     border: 1px solid #ccc;
@@ -258,5 +266,52 @@ img[height="300px"] {
     object {
         width: 100%;
         height: 400px;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form > fieldset {
+    background-color: #f9f9fc;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+h3 ~ p {
+    color: #444;
+}
+
+@keyframes fadeRow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#video > iframe {
+    animation: popIn 0.8s ease;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
