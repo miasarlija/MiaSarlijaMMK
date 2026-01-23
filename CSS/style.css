@@ -315,3 +315,21 @@ h3 ~ p {
         opacity: 1;
     }
 }
+
+.slika-3d {
+    perspective: 800px;
+}
+
+.slika-3d img {
+    transition: transform 0.6s ease;
+    backface-visibility: hidden;
+}
+
+.slika-3d img:hover {
+    transform: rotateY(15deg) scale(1.05);
+}
+
+.slika-3d img {
+    width: 220px;     
+    height: auto;
+}
